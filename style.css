@@ -4,3 +4,17 @@
     margin-left: auto;
   }
 }
+/* hero section background img */
+.background-holder {
+  background-image: url("imgs/background-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  /* centering content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
