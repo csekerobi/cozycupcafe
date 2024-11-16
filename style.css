@@ -1,1 +1,6 @@
-
+/* For larger screens, move the Menu button to the far right */
+@media (min-width: 992px) {
+  .menu-button {
+    margin-left: auto;
+  }
+}
