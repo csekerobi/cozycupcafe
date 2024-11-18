@@ -12,61 +12,158 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- background img holder -->
-     <div class="container-fluid background-holder">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#categories">Menu Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item"></li>
-          </ul>
+    <div class="container-fluid background-holder">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#categories">Menu Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary menu-button">
+              Menu
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- HERO SECTION -->
+      <div class="container text-center welcome">
+        <div class="welcome-content">
+          <h1>Welcome to Cozy Café</h1>
+          <p>Est. 2024</p>
           <button type="button" class="btn btn-primary menu-button">
             Menu
           </button>
         </div>
       </div>
-    </nav>
-    <!-- hero section content -->
-    <div class="container text-center welcome">
-      <div class="welcome-content">
-        <h1>Welcome to Cozy Café</h1>
-        <p>Est. 2024</p>
-        <button type="button" class="btn btn-primary menu-button">
-          Menu
-        </button>
+    </div>
+    <!-- ABOUT SECTION -->
+    <!-- section seperator -->
+    <div class="container-fluid about py-5">
+      <h2 class="container text-center pb-4">About Us</h2>
+      <!-- Stats Section -->
+      <div class="stats-section row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col text-center">
+          <h2 class="mb-2">200+</h2>
+          <p>Cups Sold Daily</p>
+        </div>
+        <div class="col text-center">
+          <h2 class="mb-2">100%</h2>
+          <p>Organic Coffee Beans</p>
+        </div>
+        <div class="col text-center">
+          <h2 class="mb-2">80%</h2>
+          <p>Ingredients Sourced Locally</p>
+        </div>
+      </div>
+      <!-- about main content -->
+      <div class="about-main-content mx-auto row align-items-center">
+        <!-- main content img -->
+        <div class="col col-lg-4 d-none d-md-block text-center">
+          <img src="/imgs/about-img.jpg" class="img-fluid w-75" />
+        </div>
+        <div class="col col-lg-8">
+          <!-- main content text -->
+          <p class="about-text mb-3">
+            At Cozy Cup Café, we’re passionate about creating a warm, welcoming
+            space where the community can enjoy quality coffee, indulgent
+            milkshakes, and freshly baked pastries. From our carefully sourced
+            coffee beans to our locally made ingredients, we believe in
+            delivering the best flavors with every sip and bite. Our baristas
+            are dedicated to perfecting every cup, ensuring that your coffee is
+            as rich and flavorful as it can be. Whether you’re stopping by for a
+            quick coffee or staying to relax, our friendly team is here to make
+            you feel at home.
+          </p>
+          <p class="about-text mb-5">
+            Our café is designed to be more than just a place to grab a
+            drink—it’s a space to connect, unwind, and enjoy life’s little
+            moments. We take pride in our sustainable practices, striving to
+            minimize waste and support local farmers. With cozy seating and a
+            calming atmosphere, it’s the perfect spot to catch up with friends
+            or spend time on your own. Cozy up with us today and experience the
+            difference!
+          </p>
+          <!-- main content features -->
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <h5>
+                Outdoor Seating
+                <svg
+                  width="16"
+                  height="21"
+                  viewBox="0 0 16 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 11.5V2.5C15 1.397 14.103 0.5 13 0.5H3C1.897 0.5 1 1.397 1 2.5V11.5C0.734784 11.5 0.48043 11.6054 0.292893 11.7929C0.105357 11.9804 0 12.2348 0 12.5V20.5H2V15.5H14V20.5H16V12.5C16 12.2348 15.8946 11.9804 15.7071 11.7929C15.5196 11.6054 15.2652 11.5 15 11.5ZM13 2.5V11.5H11V2.5H13ZM9 2.5V11.5H7V2.5H9ZM3 2.5H5V11.5H3V2.5Z"
+                    fill="#FF8838"
+                  />
+                </svg>
+              </h5>
+              <p>
+                Relax in our beautiful outdoor area, perfect for sunny days.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h5>
+                Free Wi-Fi
+                <svg
+                  width="23"
+                  height="17"
+                  viewBox="0 0 23 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 2.5C15.037 2.5 18.337 3.853 20.793 6.309L22.207 4.895C19.374 2.061 15.571 0.5 11.5 0.5C7.42897 0.501 3.62597 2.061 0.792969 4.895L2.20697 6.309C4.66297 3.853 7.96297 2.5 11.5 2.5ZM17.171 10.807C14.097 7.733 8.90297 7.733 5.82897 10.807L7.24297 12.221C9.54997 9.914 13.45 9.914 15.757 12.221L17.171 10.807Z"
+                    fill="#FF8838"
+                  />
+                  <path
+                    d="M19.937 7.79305C15.365 3.21905 7.63596 3.21905 3.06396 7.79305L4.47797 9.20705C8.28497 5.40005 14.716 5.40005 18.523 9.20705L19.937 7.79305Z"
+                    fill="#FF8838"
+                  />
+                  <path
+                    d="M11.4999 16.5C12.6045 16.5 13.4999 15.6046 13.4999 14.5C13.4999 13.3954 12.6045 12.5 11.4999 12.5C10.3954 12.5 9.49994 13.3954 9.49994 14.5C9.49994 15.6046 10.3954 16.5 11.4999 16.5Z"
+                    fill="#FF8838"
+                  />
+                </svg>
+              </h5>
+              <p>Stay connected with our fast and reliable internet service.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

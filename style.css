@@ -18,3 +18,15 @@
   justify-content: center;
   align-items: center;
 }
+/* about section */
+.about {
+  background-image: url("imgs/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.about-main-content {
+  width: 80%;
+}
+.about-text {
+  line-height: 1.8;
+}
