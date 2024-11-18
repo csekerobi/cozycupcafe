@@ -18,15 +18,17 @@
   justify-content: center;
   align-items: center;
 }
-/* about section */
-.about {
-  background-image: url("imgs/background.jpg");
-  background-size: cover;
-  background-position: center;
+.card-img-custom {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
 }
-.about-main-content {
-  width: 80%;
+/* padding within card body */
+.menu-categories-section .card-body {
+  padding: 1rem 1.5rem;
 }
-.about-text {
-  line-height: 1.8;
+/* spacing between text elements */
+.menu-categories-section .card-text,
+.menu-categories-section .card-title {
+  margin-bottom: 1rem;
 }
