@@ -33,7 +33,7 @@
   margin-bottom: 1rem;
 }
 
-.avatar {
+.team-avatar {
   width: 80px;
   height: 80px;
   object-fit: cover;
@@ -48,4 +48,25 @@
 
 .social-icons a:hover {
   color: #007bff;
+}
+
+.testimonials-section {
+  padding: 2rem 0;
+}
+
+.stars i {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+}
+
+.reviewer-info small {
+  color: #6c757d;
 }
