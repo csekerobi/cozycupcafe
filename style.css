@@ -1,14 +1,100 @@
-/* For larger screens, move the Menu button to the far right */
+/* VARIABLES */
+:root {
+  /* typography */
+  --font-family-base: "Urbanist", sans-serifS;
+  --font-family-heading: "IM Fell Great Primer SC", serif;
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-medium: 1.25rem; /* 20px */
+  --font-size-large: 1.5rem; /* 24px */
+  --font-size-xlarge: 2rem; /* 32px */
+  --font-size-xxlarge: 3rem; /* 48px */
+  /* colors */
+  --color-dominant: #ddd4c3; /* 60% */
+  --color-secondary: #744726; /* 30% */
+  --color-secondary-light: #9c7753; /* secondary 30% */
+  --color-accent: #c75135; /* 10% */
+  --color-accent-light: #e5735e; /* secondary 10% */
+  --color-background-light: #f9f5f2; /* lighter background sections */
+  --color-text-dark: #1a0d09; /* very dark text */
+}
+/* general styles */
+body {
+  background: linear-gradient(
+    to top,
+    var(--color-secondary),
+    var(--color-dominant) 60%,
+    white
+  ); /* gradient backgorund */
+  color: var(--color-secondary);
+  margin: 0;
+  font-family: var(--font-family-base);
+}
+h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xxlarge);
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+}
+p {
+  line-height: 1.6; /* readbility adjustment */
+}
+path {
+  fill: var(--color-accent); /* svg colors */
+}
+/* NAVBAR */
 @media (min-width: 992px) {
   .menu-button {
-    margin-left: auto;
+    margin-left: auto; /* on lg screens, move Menu button to the right */
   }
 }
-/* hero section background img */
-.background-holder {
-  background-image: url("imgs/background-hero.jpg");
-  background-size: cover;
-  background-position: center;
+nav {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  background-color: var(--color-secondary);
+  color: var(--color-dominant);
+}
+.nav-link {
+  color: var(--color-secondary-light);
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: var(--color-accent-light);
+}
+.menu-button {
+  background-color: var(--color-accent);
+  color: var(--color-background-light);
+  font-size: var(--font-size-medium);
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.menu-button:hover {
+  background-color: var(--color-accent-light);
+}
+.navbar-toggler {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* HERO SECTION */
+.welcome h1 {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 5vw, 6rem); /* Min: 2.5rem, Max: 6rem */
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-text-dark);
+}
+.welcome p {
+  color: var(--color-secondary-light);
 }
 .welcome {
   width: 100vw;
@@ -17,6 +103,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* MENU-CATEGORIES SECTION */
+.card {
+  background-color: var(--color-dominant);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light);
+}
+.card-title {
+  color: var(--color-secondary);
+}
+.card-text {
+  color: var(--color-secondary-light);
+}
+.btn-link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: var(--color-accent-light);
 }
 .card-img-custom {
   width: 100%;
@@ -33,29 +139,34 @@
   margin-bottom: 1rem;
 }
 
+/* ABOUT US SECTION */
+.about-text {
+  font-size: var(--font-size-medium);
+}
+
+/* TEAM SECTION */
 .team-avatar {
   width: 80px;
   height: 80px;
   object-fit: cover;
   border: 2px solid #dee2e6;
 }
-
 .social-icons a {
-  color: #6c757d;
+  color: var(--color-accent);
   font-size: 1.2rem;
   transition: color 0.3s;
 }
-
 .social-icons a:hover {
-  color: #007bff;
+  color: var(--color-accent-light);
 }
 
+/* REVIEWS SECTION */
 .testimonials-section {
   padding: 2rem 0;
 }
 
 .stars i {
-  color: #ffc107;
+  color: var(--color-accent);
   font-size: 1.2rem;
   margin: 0 2px;
 }
@@ -71,22 +182,25 @@
   color: #6c757d;
 }
 
-/* footer */
+/* FOOTER SECTION */
 .footer-section {
-  background-color: #343a40;
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-dominant);
 }
-
 .footer-social-links a {
-  color: gray;
-  font-size: 1.5rem;
+  color: var(--color-dominant);
+  text-decoration: none;
 }
-
+.footer-social-links a:hover {
+  color: var(--color-accent-light);
+}
 .footer-links a {
   color: gray;
   text-decoration: none;
 }
-
+.footer-links a:hover {
+  color: var(--color-accent);
+}
 .map-placeholder {
   background-image: url("imgs/placeholder-map.jpg");
   background-size: cover;
