@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Cozy Café</title>
+    <!-- link to bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- link to custom css-->
+    <link href="style.css" rel="stylesheet" />
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link for boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="bx bxs-home bx-md"></i
+        ></a>
+      </div>
+    </nav>
+    <div class="container py-5">
+      <h1 class="text-center my-5">Café Menu</h1>
+
+      <!-- Coffees Section -->
+      <div class="menu-section">
+        <h2>Coffees</h2>
+        <p class="col-md-6">
+          Our coffee is made with care, using only the finest beans sourced from
+          sustainable farms. Whether you prefer a bold espresso, a frothy
+          cappuccino, or a smooth iced latte, we have something to satisfy every
+          coffee lover.
+        </p>
+        <div id="coffeeCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Espresso" />
+                  <div>
+                    <h5>Espresso</h5>
+                    <p>A classic, bold single shot of pure coffee.</p>
+                    <div class="price">$3.00</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Cappuccino" />
+                  <div>
+                    <h5>Cappuccino</h5>
+                    <p>
+                      Rich espresso topped with steamed milk and a dollop of
+                      foam.
+                    </p>
+                    <div class="price">$4.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Latte" />
+                  <div>
+                    <h5>Latte</h5>
+                    <p>
+                      Smooth espresso with creamy steamed milk and light foam.
+                    </p>
+                    <div class="price">$4.50</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Americano" />
+                  <div>
+                    <h5>Americano</h5>
+                    <p>
+                      Espresso diluted with hot water for a light, smooth
+                      flavor.
+                    </p>
+                    <div class="price">$3.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Mocha" />
+                  <div>
+                    <h5>Mocha</h5>
+                    <p>Espresso, steamed milk, and a hint of chocolate.</p>
+                    <div class="price">$4.75</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Macchiato" />
+                  <div>
+                    <h5>Macchiato</h5>
+                    <p>Espresso with a small amount of milk foam.</p>
+                    <div class="price">$3.75</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#coffeeCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bx bx-chevron-left bx-md"></i>
+            </button>
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#coffeeCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bx bx-chevron-right bx-md"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Milkshakes Section -->
+      <div class="menu-section">
+        <h2>Milkshakes</h2>
+        <p class="col-md-6">
+          Indulge in our creamy, handcrafted milkshakes, made with the freshest
+          ingredients and topped with whipped cream. From classic vanilla to
+          creative seasonal flavors, our milkshakes are the perfect treat for
+          any occasion
+        </p>
+        <div id="milkshakeCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Vanilla Bliss" />
+                  <div>
+                    <h5>Vanilla Bliss</h5>
+                    <p>Creamy vanilla ice cream blended to perfection.</p>
+                    <div class="price">$5.00</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Chocolate Indulgence" />
+                  <div>
+                    <h5>Chocolate Indulgence</h5>
+                    <p>Rich chocolate milkshake topped with whipped cream.</p>
+                    <div class="price">$5.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Strawberry Delight" />
+                  <div>
+                    <h5>Strawberry Delight</h5>
+                    <p>Fresh strawberries blended with creamy ice cream.</p>
+                    <div class="price">$5.50</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Banana Boost" />
+                  <div>
+                    <h5>Banana Boost</h5>
+                    <p>Sweet bananas with a hint of vanilla.</p>
+                    <div class="price">$5.25</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Oreo Crunch" />
+                  <div>
+                    <h5>Oreo Crunch</h5>
+                    <p>Classic milkshake blended with Oreo cookies.</p>
+                    <div class="price">$6.00</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Minty Fresh" />
+                  <div>
+                    <h5>Minty Fresh</h5>
+                    <p>Refreshing mint with chocolate chips.</p>
+                    <div class="price">$5.75</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Caramel Swirl" />
+                  <div>
+                    <h5>Caramel Swirl</h5>
+                    <p>
+                      Creamy caramel milkshake with a drizzle of caramel sauce.
+                    </p>
+                    <div class="price">$5.75</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Peanut Butter Cup" />
+                  <div>
+                    <h5>Peanut Butter Cup</h5>
+                    <p>Smooth peanut butter with chocolate and ice cream.</p>
+                    <div class="price">$6.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#milkshakeCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bx bx-chevron-left bx-md"></i>
+            </button>
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#milkshakeCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bx bx-chevron-right bx-md"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pastries Section -->
+      <div class="menu-section">
+        <h2>Pastries</h2>
+        <p class="col-md-6">
+          From buttery croissants to decadent muffins and cakes, all of our
+          pastries are baked fresh daily in-house. Made with locally sourced
+          ingredients, they pair perfectly with your favorite coffee or tea.
+        </p>
+        <div id="pastryCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Croissant" />
+                  <div>
+                    <h5>Croissant</h5>
+                    <p>Flaky, buttery French pastry.</p>
+                    <div class="price">$3.50</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Chocolate Croissant" />
+                  <div>
+                    <h5>Chocolate Croissant</h5>
+                    <p>Croissant filled with rich chocolate.</p>
+                    <div class="price">$4.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Blueberry Muffin" />
+                  <div>
+                    <h5>Blueberry Muffin</h5>
+                    <p>Moist muffin packed with blueberries.</p>
+                    <div class="price">$3.75</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Cinnamon Roll" />
+                  <div>
+                    <h5>Cinnamon Roll</h5>
+                    <p>Sweet roll with cinnamon swirls and icing.</p>
+                    <div class="price">$4.25</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Apple Turnover" />
+                  <div>
+                    <h5>Apple Turnover</h5>
+                    <p>Flaky pastry filled with sweet apple filling.</p>
+                    <div class="price">$4.50</div>
+                  </div>
+                </div>
+                <div class="col-md-6 menu-item">
+                  <img src="imgs/placeholder.webp" alt="Lemon Tart" />
+                  <div>
+                    <h5>Lemon Tart</h5>
+                    <p>Zesty lemon filling in a crisp tart shell.</p>
+                    <div class="price">$4.75</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#pastryCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bx bx-chevron-left bx-md"></i>
+            </button>
+            <button
+              class="btn btn-slide"
+              type="button"
+              data-bs-target="#pastryCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bx bx-chevron-right bx-md"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer-section py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Business Info -->
+          <div class="col-lg-4 col-md-12">
+            <!-- Logo -->
+            <div class="mb-3">Logo</div>
+            <!-- Contact Info -->
+            <div class="mb-3">
+              <h5>Contact:</h5>
+              <p class="mb-0">Phone: +1 234 567 890</p>
+              <p>Email: info@business.com</p>
+            </div>
+            <!-- Address -->
+            <div class="mb-3">
+              <h5>Address:</h5>
+              <p>123 Business Street, City, State, Country</p>
+            </div>
+            <!-- Social Links -->
+            <div class="footer-social-links d-flex">
+              <a href="..." class="me-3" target="_blank" aria-label="Facebook">
+                <i class="bx bxl-facebook-square bx-sm"></i>
+              </a>
+              <a href="..." class="me-3" target="_blank" aria-label="Email">
+                <i class="bx bxs-envelope bx-sm"></i>
+              </a>
+              <a href="..." class="me-3" target="_blank" aria-label="Instagram">
+                <i class="bx bxl-instagram bx-sm"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Map -->
+          <div class="col-lg-8 col-md-12">
+            <div class="map-placeholder w-100"></div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <hr class="my-4" />
+        <div class="row">
+          <!-- Links -->
+          <div class="col-md-6 col-sm-12">
+            <ul class="footer-links list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="..." class="text-light">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="..." class="text-light">Terms of Service</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="..." class="text-light">Cookie Settings</a>
+              </li>
+            </ul>
+          </div>
+          <!-- All Rights Reserved -->
+          <div class="col-md-6 col-sm-12 text-end">
+            <p class="mb-0">&copy; 2024 Business Name. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
