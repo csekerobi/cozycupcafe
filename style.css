@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
   /* typography */
-  --font-family-base: "Urbanist", sans-serifS;
+  --font-family-base: "Urbanist", sans-serif;
   --font-family-heading: "IM Fell Great Primer SC", serif;
   --font-size-small: 0.875rem; /* 14px */
   --font-size-base: 1rem; /* 16px */
@@ -207,4 +207,31 @@ nav {
   background-position: center;
   height: 250px;
   width: 100%;
+}
+/* CONTACT FORM STYLES */
+.bxs-home {
+  color: var(--color-accent);
+  transition: color 0.3s;
+}
+.bxs-home:hover {
+  color: var(--color-accent-light);
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+form .form-label {
+  font-size: var(--font-size-medium);
+  color: var(--color-secondary);
+}
+form .form-control {
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 5px;
+}
+form .btn-primary {
+  background-color: var(--color-accent);
+  border: none;
+}
+form .btn-primary:hover {
+  background-color: var(--color-accent-light);
 }

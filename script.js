@@ -14,4 +14,17 @@ document.addEventListener('click', function (event) {
       bsCollapse.hide();
     }
   });
+  // script for form validation
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission for demo purposes
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
   
+    if (name && email && message) {
+      alert('Thank you for contacting us!');
+      // Optionally, send form data to a server
+    } else {
+      alert('Please fill in all fields.');
+    }
+  });
