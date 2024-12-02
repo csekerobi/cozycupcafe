@@ -4,30 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cozy Café</title>
-    <!-- link for bootstrap -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- link for custom css -->
+    <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" />
-    <!-- linking google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- link for boxicons -->
+    <!-- Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="overflow-x-hidden">
-    <!-- navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Logo</a>
@@ -42,6 +42,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -64,6 +65,7 @@
         </div>
       </div>
     </nav>
+
     <!-- HERO SECTION -->
     <div class="container text-center welcome">
       <div class="welcome-content">
@@ -73,17 +75,18 @@
       </div>
     </div>
 
-    <!-- Menu Categories Section-->
+    <!-- MENU CATEGORIES SECTION-->
     <div class="container py-5">
       <h2 id="categories" class="text-center pb-4">
         Explore Our Delicious Menu Offerings
       </h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
+          <!-- Cat. Coffee -->
+          <div class="cat-card h-100">
             <img
               src="imgs/cat-coffee.jpg"
-              class="card-img-top card-img-custom"
+              class="card-img-top cat-card-img"
               alt="Coffee Image"
             />
             <div class="card-body">
@@ -92,9 +95,9 @@
                 Our handpicked coffee beans are brewed to perfection, offering
                 bold, smooth flavours...
               </p>
-            </div>
-            <button type="button" class="btn btn-link">
-              Sip<svg
+              <!-- Shortcut to menu -->
+              <a href="menu.html" class="menu-link">Sip</a>
+              <svg
                 width="9"
                 height="12"
                 viewBox="0 0 9 12"
@@ -106,14 +109,15 @@
                   fill="#FF8838"
                 />
               </svg>
-            </button>
+            </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <!-- Cat. Milkshakes -->
+          <div class="cat-card h-100">
             <img
               src="imgs/cat-milkshake.jpg"
-              class="card-img-top card-img-custom"
+              class="card-img-top cat-card-img"
               alt="..."
             />
             <div class="card-body">
@@ -124,9 +128,9 @@
                 classic flavours or adventurous combinations, there’s a
                 milkshake for everyone!
               </p>
-            </div>
-            <button type="button" class="btn btn-link">
-              Taste<svg
+              <!-- Shortcut to menu -->
+              <a href="menu.html" class="menu-link">Taste</a>
+              <svg
                 width="9"
                 height="12"
                 viewBox="0 0 9 12"
@@ -138,14 +142,15 @@
                   fill="#FF8838"
                 />
               </svg>
-            </button>
+            </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <!-- Cat. Pastries -->
+          <div class="cat-card h-100">
             <img
               src="imgs/cat-pastry.jpg"
-              class="card-img-top card-img-custom"
+              class="card-img-top cat-card-img"
               alt="..."
             />
             <div class="card-body">
@@ -155,9 +160,9 @@
                 daily. From buttery croissants to decadent cakes, our selection
                 is the perfect complement to your favourite drink.
               </p>
-            </div>
-            <button type="button" class="btn btn-link">
-              Bite<svg
+              <!-- Shortcut to menu -->
+              <a href="menu.html" class="menu-link">Bite</a>
+              <svg
                 width="9"
                 height="12"
                 viewBox="0 0 9 12"
@@ -169,16 +174,16 @@
                   fill="#FF8838"
                 />
               </svg>
-            </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ABOUT SECTION -->
-    <!-- section seperator -->
+
+    <!-- ABOUT US SECTION -->
     <div class="container about py-5">
       <h2 id="about" class="container text-center pb-4">About Us</h2>
-      <!-- Stats Section -->
+      <!-- Stats -->
       <div class="container">
         <div class="stats-section row row-cols-1 row-cols-md-3 g-4 mb-5">
           <div class="col text-center">
@@ -195,14 +200,14 @@
           </div>
         </div>
       </div>
-      <!-- about main content -->
+      <!-- About us content -->
       <div class="about-main-content mx-auto row align-items-center">
-        <!-- main content img -->
+        <!-- Left img -->
         <div class="col col-lg-4 d-none d-md-block text-center pe-5">
-          <img src="/imgs/about-img.jpg" class="img-fluid" />
+          <img src="/imgs/about-img.jpg" class="img-fluid left-img" />
         </div>
         <div class="col col-lg-8">
-          <!-- main content text -->
+          <!-- About us text -->
           <p class="about-text mb-3">
             At Cozy Cup Café, we’re passionate about creating a warm, welcoming
             space where the community can enjoy quality coffee, indulgent
@@ -223,9 +228,10 @@
             or spend time on your own. Cozy up with us today and experience the
             difference!
           </p>
-          <!-- main content features -->
+          <!-- About us features -->
           <div class="row g-3">
             <div class="col-12 col-lg-6">
+              <!-- Outdoor seating -->
               <h5>
                 Outdoor Seating
                 <svg
@@ -246,6 +252,7 @@
               </p>
             </div>
             <div class="col-12 col-lg-6">
+              <!-- Free Wifi -->
               <h5>
                 Free Wi-Fi
                 <svg
@@ -275,27 +282,33 @@
         </div>
       </div>
     </div>
-    <!-- Our Team -->
+
+    <!-- TEAM SECTION -->
     <div class="team-section container my-5">
       <h2 id="team" class="text-center pb-4">Our Team</h2>
       <div class="row">
         <!-- Team Member 1 -->
         <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
-          <div class="card team-card text-center">
+          <div class="team-card text-center">
             <div class="card-body">
+              <!-- Avatar -->
               <img
                 src="imgs/avatar1.png"
                 alt="Team Member 1"
-                class="rounded-circle team-avatar mb-3"
+                class="rounded-circle avatar mb-3"
               />
+              <!-- Name -->
               <h5 class="card-title">Jake Matthews</h5>
+              <!-- Role -->
               <p class="card-text">Pastry Chef</p>
+              <!-- Bio -->
               <p>
                 Jake is the creative mind behind our delicious pastries. Trained
                 in European patisseries, he bakes everything fresh daily, from
                 buttery croissants to indulgent cakes that keep customers coming
                 back for more.
               </p>
+              <!-- Socials -->
               <div class="card-socials">
                 <div class="social-icons d-flex justify-content-center">
                   <a
@@ -324,21 +337,26 @@
         </div>
         <!-- Team Member 2 -->
         <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
-          <div class="card team-card text-center">
+          <div class="team-card text-center">
             <div class="card-body">
+              <!-- Avatar -->
               <img
                 src="imgs/avatar2.png"
                 alt="Team Member 2"
-                class="rounded-circle team-avatar mb-3"
+                class="rounded-circle avatar mb-3"
               />
+              <!-- Name -->
               <h5 class="card-title">Emily Richards</h5>
+              <!-- Role -->
               <p class="card-text">Customer Experience Manager</p>
+              <!-- Bio -->
               <p>
                 Emily makes sure every customer feels at home from the moment
                 they walk in. Her focus is on creating a warm, inviting
                 environment while ensuring excellent service that leaves
                 everyone with a smile.
               </p>
+              <!-- Socials -->
               <div class="card-socials">
                 <div class="social-icons d-flex justify-content-center">
                   <a
@@ -367,21 +385,26 @@
         </div>
         <!-- Team Member 3 -->
         <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
-          <div class="card team-card text-center">
+          <div class="team-card text-center">
             <div class="card-body">
+              <!-- Avatar -->
               <img
                 src="imgs/avatar3.png"
                 alt="Team Member 3"
-                class="rounded-circle team-avatar mb-3"
+                class="rounded-circle avatar mb-3"
               />
+              <!-- Name -->
               <h5 class="card-title">Sarah Thompson</h5>
+              <!-- Role -->
               <p class="card-text">Head Barista</p>
+              <!-- Bio -->
               <p>
                 Sarah brings over 10 years of coffee expertise to The Cozy Cup
                 Café. With a deep passion for brewing the perfect cup, she
                 oversees our coffee menu and ensures every cup is rich, bold,
                 and perfectly balanced.
               </p>
+              <!-- Socials -->
               <div class="card-socials">
                 <div class="social-icons d-flex justify-content-center">
                   <a
@@ -410,21 +433,26 @@
         </div>
         <!-- Team Member 4 -->
         <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
-          <div class="card team-card text-center">
+          <div class="team-card text-center">
             <div class="card-body">
+              <!-- Avatar -->
               <img
                 src="imgs/avatar4.png"
                 alt="Team Member 4"
-                class="rounded-circle team-avatar mb-3"
+                class="rounded-circle avatar mb-3"
               />
+              <!-- Name -->
               <h5 class="card-title">David Patel</h5>
+              <!-- Role -->
               <p class="card-text">Operations Manager</p>
+              <!-- Bio -->
               <p>
                 David ensures everything runs smoothly behind the scenes. With a
                 keen eye for detail and a passion for quality, he manages our
                 daily operations, making sure our café delivers the best
                 experience from start to finish.
               </p>
+              <!-- Socials -->
               <div class="card-socials">
                 <div class="social-icons d-flex justify-content-center">
                   <a
@@ -453,15 +481,16 @@
         </div>
       </div>
     </div>
-    <!-- Reviews section -->
-    <div class="testimonials-section container my-5">
+
+    <!-- REVIEWS SECTION -->
+    <div class="container my-5">
       <h2 id="reviews" class="text-center pb-4">Customer Reviews</h2>
       <div class="row">
-        <!-- Testimonial 1 -->
+        <!-- Review 1 -->
         <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
-          <div class="card testimonial-card mx-2">
+          <div class="review-card mx-2">
             <div class="card-body">
-              <!-- Stars Row -->
+              <!-- Stars -->
               <div class="stars mb-3 text-center">
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star"></i>
@@ -490,11 +519,11 @@
             </div>
           </div>
         </div>
-        <!-- Testimonial 2 -->
+        <!-- Review 2 -->
         <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
-          <div class="card testimonial-card mx-2">
+          <div class="review-card mx-2">
             <div class="card-body">
-              <!-- Stars Row -->
+              <!-- Stars -->
               <div class="stars mb-3 text-center">
                 <i class="custom-star-icon bx bxs-star"></i>
                 <i class="custom-star-icon bx bxs-star"></i>
@@ -523,11 +552,11 @@
             </div>
           </div>
         </div>
-        <!-- Testimonial 3 -->
+        <!-- Review 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12 pb-4">
-          <div class="card testimonial-card mx-2">
+          <div class="review-card mx-2">
             <div class="card-body">
-              <!-- Stars Row -->
+              <!-- Stars -->
               <div class="stars mb-3 text-center">
                 <i class="custom-star-icon bx bxs-star"></i>
                 <i class="custom-star-icon bx bxs-star"></i>
@@ -558,7 +587,8 @@
         </div>
       </div>
     </div>
-    <!-- footer section -->
+
+    <!-- FOOTER SECTION -->
     <footer class="footer-section py-4">
       <div class="container">
         <div class="row">
@@ -619,9 +649,10 @@
         </div>
       </div>
     </footer>
-    <!-- linking custom js -->
+
+    <!-- Custom Js -->
     <script src="script.js"></script>
-    <!-- linking bootstrap js -->
+    <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

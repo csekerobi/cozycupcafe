@@ -11,24 +11,26 @@
   --font-size-xxlarge: 3rem; /* 48px */
   /* colors */
   --color-dominant: #ece8e1; /* 60% */
+  --color-dominant-light: #f9f5f2; /* secondary 60% */
   --color-secondary: #744726; /* 30% */
   --color-secondary-light: #866a4b; /* secondary 30% */
   --color-accent: #c75135; /* 10% */
   --color-accent-light: #e5735e; /* secondary 10% */
-  --color-background-light: #f9f5f2; /* lighter background sections */
-  --color-text-dark: #1a0d09; /* very dark text */
+  --color-text-dark: #1a0d09; /* dark text */
+  /* shadow */
+  --shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
+
 /* general styles */
 body {
   background: linear-gradient(
     to top,
     var(--color-secondary-light),
-    var(--color-dominant) 40%,
-    white
+    var(--color-dominant-light) 60%
   ); /* gradient backgorund */
   color: var(--color-secondary);
-  margin: 0;
   font-family: var(--font-family-base);
+  margin: 0;
 }
 h2 {
   font-family: var(--font-family-heading);
@@ -38,11 +40,12 @@ h2 {
 }
 p {
   color: var(--color-secondary-light);
-  line-height: 1.6; /* readbility adjustment */
+  line-height: 1.6;
 }
 path {
   fill: var(--color-accent); /* svg colors */
 }
+
 /* NAVBAR */
 @media (min-width: 992px) {
   .menu-button {
@@ -65,7 +68,7 @@ nav {
 }
 .menu-button {
   background-color: var(--color-accent);
-  color: var(--color-background-light);
+  color: var(--color-dominant-light);
   font-size: var(--font-size-medium);
   text-decoration: none;
   border: none;
@@ -76,6 +79,7 @@ nav {
 }
 .menu-button:hover {
   background-color: var(--color-accent-light);
+  color: var(--color-secondary);
 }
 .navbar-toggler {
   background: none;
@@ -102,60 +106,72 @@ nav {
 .welcome {
   width: 100vw;
   height: 100vh;
-  /* centering content */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* MENU-CATEGORIES SECTION */
-.card {
+.cat-card {
   background-color: var(--color-dominant);
   color: var(--color-secondary);
   border: 1px solid var(--color-secondary-light);
+  border-radius: 4px;
 }
-.card-title {
+.cat-card .card-body {
+  padding: 1rem;
+}
+.cat-card .card-title {
   color: var(--color-secondary);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-large);
+  margin-bottom: 1rem;
 }
-.card-text {
+.cat-card .card-text {
   color: var(--color-secondary-light);
+  font-size: var(--font-size-small);
+  margin-bottom: 1rem;
 }
-.btn-link {
-  color: var(--color-accent);
+.menu-link {
+  color: var(--color-secondary);
   text-decoration: none;
 }
-.btn-link:hover {
+.menu-link:hover {
   color: var(--color-accent-light);
 }
-.card-img-custom {
+.cat-card-img {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
-}
-/* padding within card body */
-.menu-categories-section .card-body {
-  padding: 1rem 1.5rem;
-}
-/* spacing between text elements */
-.menu-categories-section .card-text,
-.menu-categories-section .card-title {
-  margin-bottom: 1rem;
+  margin-bottom: 4px;
 }
 
 /* ABOUT US SECTION */
-.about-text {
-  font-size: var(--font-size-medium);
+.left-img {
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
 }
 
 /* TEAM SECTION */
-.team-avatar {
+.team-card {
+  background-color: var(--color-dominant);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.team-card .card-body {
+  padding: 1rem;
+}
+.avatar {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border: 2px solid #dee2e6;
+  border: 1px var(--color-accent-light) solid;
 }
 .social-icons a {
-  color: var(--color-accent);
+  color: var(--color-secondary);
   font-size: 1.2rem;
   transition: color 0.3s;
 }
@@ -164,44 +180,43 @@ nav {
 }
 
 /* REVIEWS SECTION */
-.testimonials-section {
-  padding: 2rem 0;
+.review-card {
+  background-color: var(--color-dominant);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
 }
-
+.review-card .card-body {
+  padding: 1rem;
+}
 .stars i {
   color: var(--color-accent);
   font-size: 1.2rem;
   margin: 0 2px;
 }
-
 .reviewer-avatar {
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border: 2px solid #dee2e6;
+  border: 1px var(--color-accent) solid;
 }
-
 .reviewer-info small {
-  color: #6c757d;
+  color: lightgray;
 }
 
 /* FOOTER SECTION */
 .footer-section {
-  background-color: var(--color-secondary);
-  color: var(--color-dominant);
+  background-color: var(--color-text-dark);
+  color: var(--color-dominant-light);
 }
 .footer-social-links a {
-  color: var(--color-background-light);
+  color: var(--color-dominant-light);
   text-decoration: none;
+  transition: 0.3s;
 }
 .footer-social-links a:hover {
   color: var(--color-accent-light);
-}
-.footer-links a {
-  text-decoration: none;
-}
-.footer-links a:hover {
-  color: var(--color-accent);
 }
 .map-placeholder {
   background-image: url("imgs/placeholder-map.jpg");
@@ -210,7 +225,12 @@ nav {
   height: 250px;
   width: 100%;
 }
+
 /* CONTACT FORM STYLES */
+.contact-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xxlarge);
+}
 .bxs-home {
   color: var(--color-accent);
   transition: color 0.3s;
@@ -228,7 +248,7 @@ form .form-label {
 }
 form .form-control {
   border: 1px solid var(--color-secondary-light);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 form .btn-primary {
   background-color: var(--color-accent);
@@ -237,30 +257,37 @@ form .btn-primary {
 form .btn-primary:hover {
   background-color: var(--color-accent-light);
 }
-/* MENU STYLES */
-.menu-section {
-  margin: 50px 0;
+
+/* MENU PAGE */
+.menu-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xxlarge);
 }
 .menu-item {
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
+  background-color: var(--color-dominant);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 4px;
 }
-.menu-item img {
+.menu-item .card-img-top {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-right: 20px;
 }
-.menu-item h5 {
+.menu-item .card-title {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-medium);
   margin-top: 10px;
   color: var(--color-secondary);
 }
-.menu-item p {
+.menu-item .card-text {
   color: var(--color-secondary-light);
   font-size: var(--font-size-small);
   margin-top: 10px;
