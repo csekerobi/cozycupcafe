@@ -9,37 +9,45 @@ The **Cozy Café Website** is a responsive and modern website designed for a fic
 - **Responsive Design:** Optimized for mobile, tablet, and desktop views.
 - **Reusable Components:**
   - Navbar and footer are dynamically loaded from external files using JavaScript.
-- **Bootstrap Integration:** Utilizes Bootstrap for layout and styling.
+- **Bootstrap Integration:** Utilizes Bootstrap for responsive layout and consistent styling.
 
-## File Structure
+## Project Structure
 
-### HTML Files
-
-- `index.html`: Home page with a hero section, menu categories, about, team, and reviews sections.
-- `menu.html`: Menu page showcasing the café’s offerings with carousel sliders.
-- `contact.html`: Contact page with a form to submit inquiries.
-- `navbar.html`: Contains the HTML structure for the navigation bar.
-- `footer.html`: Contains the HTML structure for the footer.
-
-### CSS Files
-
-- `style.css`: Custom CSS for styling the website, including reusable variables, typography, and custom components.
-
-### JavaScript Files
-
-- `navbar.js`: Dynamically loads the `navbar.html` into pages.
-- `footer.js`: Dynamically loads the `footer.html` into pages.
-- `script.js`: Contains miscellaneous scripts, including functionality for auto-closing the navbar when clicking outside.
-
-### Assets
-
-- Images: Product and placeholder images for menu items, team members, and other sections.
+```
+README.md                 # Project documentation
+src/
+├── index.html            # Home page
+├── menu.html             # Menu page
+├── contact.html          # Contact page
+├── navbar.html           # Navbar template
+├── footer.html           # Footer template
+├── js/
+│   ├── navbar.js         # Script to load the navbar dynamically
+│   ├── footer.js         # Script to load the footer dynamically
+│   └── script.js         # Miscellaneous functionality (e.g., collapsing navbar)
+├── css/
+│   ├── style.css         # Custom styles
+└── assets/               # Images and icons
+```
 
 ## Libraries and Frameworks
 
-- [Bootstrap 5.3](https://getbootstrap.com/): For responsive grid layout and UI components.
-- [Boxicons](https://boxicons.com/): For icons used in navigation and footer.
+- [Bootstrap 5.3](https://getbootstrap.com/): For responsive layout and UI components.
+- [Boxicons](https://boxicons.com/): For icons.
 - [Google Fonts](https://fonts.google.com/): For typography.
+
+## Lighthouse Performance Report
+
+A Lighthouse performance report evaluates the website's quality in terms of performance, accessibility, best practices, and SEO. This ensures that the website adheres to modern standards and delivers an optimal user experience.
+
+![Lighthouse Report](src/assets/lighthouse.webp)
+
+### Why This is Important:
+
+- **Performance:** Ensures fast loading times, which improves user engagement and reduces bounce rates.
+- **Accessibility:** Guarantees that the website is usable by people with disabilities.
+- **Best Practices:** Confirms the implementation of modern development techniques.
+- **SEO:** Enhances visibility in search engine results, driving more traffic to the site.
 
 ## Acknowledgments
 
