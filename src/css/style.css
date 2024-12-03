@@ -218,13 +218,6 @@ nav {
 .footer-social-links a:hover {
   color: var(--color-accent-light);
 }
-.map-placeholder {
-  background-image: url("imgs/placeholder-map.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 100%;
-}
 
 /* CONTACT FORM STYLES */
 .contact-title {
