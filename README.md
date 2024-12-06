@@ -40,7 +40,7 @@ src/
 
 A Lighthouse performance report evaluates the website's quality in terms of performance, accessibility, best practices, and SEO. This ensures that the website adheres to modern standards and delivers an optimal user experience.
 
-![Lighthouse Report](src/assets/lighthouse.webp)
+![Lighthouse Report](assets/lighthouse.webp)
 
 ### Why This is Important:
 
