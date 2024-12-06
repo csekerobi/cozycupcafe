@@ -15,19 +15,18 @@ The **Cozy Café Website** is a responsive and modern website designed for a fic
 
 ```
 README.md                 # Project documentation
-src/
-├── index.html            # Home page
-├── menu.html             # Menu page
-├── contact.html          # Contact page
-├── navbar.html           # Navbar template
-├── footer.html           # Footer template
-├── js/
-│   ├── navbar.js         # Script to load the navbar dynamically
-│   ├── footer.js         # Script to load the footer dynamically
-│   └── script.js         # Miscellaneous functionality (e.g., collapsing navbar)
-├── css/
-│   ├── style.css         # Custom styles
-└── assets/               # Images and icons
+index.html            # Home page
+menu.html             # Menu page
+contact.html          # Contact page
+navbar.html           # Navbar template
+footer.html           # Footer template
+js/
+├── navbar.js         # Script to load the navbar dynamically
+├── footer.js         # Script to load the footer dynamically
+└── script.js         # Miscellaneous functionality (e.g., collapsing navbar)
+css/
+├── style.css         # Custom styles
+assets/               # Images and icons
 ```
 
 ## Libraries and Frameworks
