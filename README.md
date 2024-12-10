@@ -14,7 +14,7 @@ The **Cozy Café Website** is a responsive and modern website designed for a fic
 ## Project Structure
 
 ```
-README.md                 # Project documentation
+README.md             # Project documentation
 index.html            # Home page
 menu.html             # Menu page
 contact.html          # Contact page
@@ -59,8 +59,6 @@ A Lighthouse performance report evaluates the website's quality in terms of perf
 1. **More Reusable Elements**:
    - Convert menu cards on the `menu.html` page into reusable components for easier management and scalability.
    - Apply a similar approach to the review section for creating consistent and reusable card layouts.
-2. **Navbar Enhancements**:
-   - Modify the collapsible navbar toggler to display an "X" icon when the menu is expanded, enhancing usability and aesthetics.
 
 ## License
 
